@@ -1,7 +1,7 @@
 import React from 'react'
 import { ColumnDirective, ColumnsDirective, GridComponent, Inject,Page, Resize, Sort,ContextMenu, Filter, ExcelExport, PdfExport,Edit } from '@syncfusion/ej2-react-grids';
 
-import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy'
+import { ordersData, ordersGrid } from '../data/dummy'
 import { Header } from '../components'
 
 const Orders = () => {

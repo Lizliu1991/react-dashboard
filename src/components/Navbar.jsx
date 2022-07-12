@@ -25,7 +25,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 
 
 const Navbar = () => {
-const { activemenu, setActiveMenu, isClicked, setIsClicked, handleClick,screenSize, setScreenSize, currentColor } =useStateContext()
+const { setActiveMenu, isClicked, handleClick,screenSize, setScreenSize, currentColor } =useStateContext()
 
 //find out the screen size, based on which, the sidebar will be visible or not
 useEffect(() => {
@@ -82,8 +82,8 @@ useEffect(() => {
       <TooltipComponent content="Profile" position='BottomCenter'> 
         <div className='flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg'
         onClick={() => handleClick('userProfile')}>
-        <img src={avatar2} alt='image'
-        className='rounded-full w-8 h-8'/>
+      
+        <img src={avatar2} alt='' className='rounded-full w-8 h-8'/>
 <p>
   <span>Hi,</span> {' '} <span>Michael</span>
 </p>
