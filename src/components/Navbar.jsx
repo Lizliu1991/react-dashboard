@@ -86,7 +86,7 @@ useEffect(() => {
       
         <img src={avatar2} alt='' className='rounded-full w-8 h-8'/>
 <p>
-  <span>Hi,</span> {' '} <span>Michael</span>
+  <span>Hi,</span> {' '} <span>Lisa</span>
 </p>
 <MdKeyboardArrowDown className='text-gray-400 text-14'/>
         </div>
