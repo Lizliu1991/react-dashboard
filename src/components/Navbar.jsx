@@ -28,6 +28,7 @@ const Navbar = () => {
 const { setActiveMenu, isClicked, handleClick,screenSize, setScreenSize, currentColor } =useStateContext()
 
 //find out the screen size, based on which, the sidebar will be visible or not
+
 useEffect(() => {
   const handleResize = () => setScreenSize(window.innerWidth);
   //everytime it resizes, will call the handleResize function
@@ -37,7 +38,7 @@ useEffect(() => {
   //this function will be called initially to figure out the initial width
   return () => window.removeEventListener('resize', handleResize)
   
-}, [])
+}, [setScreenSize])
 
 //track the screensize changes
 useEffect(() => {
@@ -46,7 +47,7 @@ useEffect(() => {
   } else {
     setActiveMenu(true)
   }
-}, [screenSize])
+}, [setActiveMenu,screenSize])
 
   return (
     <div className='flex justify-between p-2 md:mx-6 relative'
